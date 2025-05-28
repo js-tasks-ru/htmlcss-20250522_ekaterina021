@@ -1,0 +1,50 @@
+:root {
+  --default_element_height: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: seagreen;
+    gap: 5px;
+    height: calc(100vh - var(--default_element_height)*3);
+    min-height: 180px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: rgba(124, 17, 115, 0.77);
+    height: var(--default_element_height);
+}
+
+.flex_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.header {
+    background-color: crimson;
+    height: var(--default_element_height);
+    align-items: center;
+}
+
+.nav {
+    background-color: goldenrod;
+    height: var(--default_element_height);
+    bottom: 0;
+}
+
+.article {
+    background-color: rgba(61, 15, 244, 0.563);
+}
+
+.text {
+    color: aliceblue;
+    text-align: center;
+}
