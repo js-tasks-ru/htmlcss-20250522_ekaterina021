@@ -1,5 +1,7 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
+@import '/03-lection1/01-button/button.css';
+@import '/03-lection1/02-accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -26,4 +28,20 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.group-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    &.column {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
