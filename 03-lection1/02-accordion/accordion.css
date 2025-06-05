@@ -1,1 +1,42 @@
-/* Стилизация аккордеона */
+@import '../../assets/css/main.css';
+
+.container {
+    height: 100vh;
+}
+
+.group-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .column {
+        flex-direction: column;
+    }
+}
+
+.accordion {
+    width: 730px;
+    border-radius: 8px;
+    border: 1px solid var(--black);
+    font-size: 16px;
+    font-weight: 400;
+
+
+    .accordion__details {
+        padding: 24px 32px;
+    }
+
+    .accordion__hidden-text {
+        margin-bottom: 8px;
+        color: var(--grey-4);
+        line-height: 24px;
+    }
+
+    .accordion__summary {
+        list-style: none;
+        background: url(https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg) no-repeat 640px 50%;
+        background-size: 16px;
+    }
+}

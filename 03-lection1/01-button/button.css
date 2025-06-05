@@ -1,1 +1,47 @@
-/* Стилизация кнопки */
+@import '../../assets/css/main.css';
+
+.container {
+    height: 100vh;
+}
+
+.group-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .column {
+        flex-direction: column;
+    }
+}
+
+.button {
+    height: 48px;
+    min-width: 180px;
+    max-width: 300px;
+    border-radius: 8px;
+    border-width: 0;
+    color: var(--white);
+
+    &.button__primary {
+        background-color: var(--primary);
+
+        &:hover:not(.button__disabled) {
+            background-color: var(--primary-hovered);
+        }
+    }
+
+    &.button__secondary {
+        background-color: var(--secondary);
+
+        &:hover:not(.button__disabled) {
+            background-color: var(--secondary-hovered);
+        }
+        
+    }
+
+    &.button__disabled {
+        opacity: 50%;
+        color: var(--grey-2);
+    } 
+}
