@@ -29,19 +29,3 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
-.container {
-    height: 100vh;
-}
-
-.group-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-
-    &.column {
-        flex-direction: column;
-        gap: 16px;
-    }
-}
