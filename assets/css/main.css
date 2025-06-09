@@ -26,6 +26,6 @@
     --secondary-hovered: var(--purple-hovered);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }

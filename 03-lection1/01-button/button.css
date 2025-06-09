@@ -9,6 +9,7 @@
     line-height: 100%;
     letter-spacing: 0%;
     padding: 15px;
+    font-family: 'Roboto';
 
     &:disabled {
         opacity: 50%;
