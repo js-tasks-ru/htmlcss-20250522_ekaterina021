@@ -31,3 +31,14 @@
         background-color: var(--secondary-hovered);
     }
 }
+
+.button_alternate {
+    background-color: var(--white);
+    border-color: var(--gray-3);
+    border-width: 1px;
+    color: var(--grey-4);
+
+    &:hover {
+        border-color: var(--black);
+    }
+}
