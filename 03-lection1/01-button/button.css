@@ -8,26 +8,26 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-
-    &.button_primary {
-        background-color: var(--primary);
-
-        &:hover {
-            background-color: var(--primary-hovered);
-        }
-    }
-
-    &.button_secondary {
-        background-color: var(--secondary);
-
-        &:hover {
-            background-color: var(--secondary-hovered);
-        }
-        
-    }
+    padding: 15px;
 
     &:disabled {
         opacity: 50%;
         pointer-events: none;
     } 
+}
+
+.button_primary {
+    background-color: var(--primary);
+
+    &:hover {
+        background-color: var(--primary-hovered);
+    }
+}
+
+.button_secondary {
+    background-color: var(--secondary);
+
+    &:hover {
+        background-color: var(--secondary-hovered);
+    }
 }
