@@ -1,7 +1,5 @@
 .histogram {
     display: flex;
-    height: 137px;
-    width: 322px;
     flex-direction: column;
     font-family: 'Inter';
     font-weight: 400;
@@ -10,67 +8,44 @@
     letter-spacing: 0;
     border-radius: 8px;
     border: 1px solid var(--black);
-    padding: 16px 24px;
+    padding: 16px 24px 24px;
 }
 
-.histogram__info_content {
+.histogram__info {
     display: flex;
     gap: 6px;
+    justify-content: space-between;
 }
 
-.histogram__right_content {
+.histogram__right {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     gap: 6px;
 }
 
-.histogram__main_content {
+.histogram__main {
     display: flex;
     flex-grow: 1;
     gap: 1px;
     align-items: end;
+    height: 50px;
+}
 
-    :nth-child(1n) {
-        height: 10px;
-        width: 9px;
-        background-color: var(--blue);
+.histogram__column {
+    width: 9px;
+    background-color: var(--blue);
+
+    &.small {
+        height: 15%;
     }
 
-    :nth-child(2n) {
-        height: 15px;
+    &.medium {
+        height: 50%;
     }
 
-    :nth-child(3n) {
-        height: 20px;
-    }
-
-    :nth-child(7n) {
-        height: 15px;
-    }
-
-    :nth-child(21) {
-        height: 31px;
-    }
-
-    :nth-child(10n + 9) {
-        height: 38px;
-    }
-
-    :nth-child(26) {
-        height: 50px;
-    }
-
-    :nth-child(5) {
-        height: 35px;
-    }
-
-    :nth-child(6) {
-        height: 55px;
-    }
-
-    :nth-child(8) {
-        height: 55px;
+    &.large {
+        height: 80%;
     }
 }
 
@@ -85,6 +60,6 @@
 }
 
 .histogram__link {
-    padding-top: 3px;
+    margin-top: 3px;
     color: var(--blue);
 }
