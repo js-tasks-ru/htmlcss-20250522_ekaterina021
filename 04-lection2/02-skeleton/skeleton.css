@@ -33,22 +33,23 @@
     gap: 8px;
     flex-direction: column;
     justify-content: center;
-    width: 475px;
+    flex-grow: 1;
 }
 
 .skeleton__line {
     height: 20px;
     background-color: var(--grey-2);
 
-    &.short {
-        width: 36.2%;
-    }
+}
 
-    &.medium {
-        width: 54.1%;
-    }
+.skeleton__line_short {
+    width: 36.2%;
+}
 
-    &.large {
-        width: 100%;
-    }
+.skeleton__line_medium {
+    width: 54.1%;
+}
+
+.skeleton__line_large {
+    width: 100%;
 }
