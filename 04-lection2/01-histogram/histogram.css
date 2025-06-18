@@ -9,6 +9,7 @@
     border-radius: 8px;
     border: 1px solid var(--black);
     padding: 16px 24px 24px;
+    width: 185px;
 }
 
 .histogram__info {
@@ -26,27 +27,26 @@
 
 .histogram__main {
     display: flex;
-    flex-grow: 1;
     gap: 1px;
     align-items: end;
     height: 50px;
 }
 
 .histogram__column {
-    width: 9px;
+    flex-basis: 9px;
     background-color: var(--blue);
+}
 
-    &.small {
-        height: 15%;
-    }
+.histogram__column_small {
+    height: 15%;
+}
 
-    &.medium {
-        height: 50%;
-    }
+.histogram__column_medium {
+    height: 50%;
+}
 
-    &.large {
-        height: 80%;
-    }
+.histogram__column_large {
+    height: 80%;
 }
 
 .histogram__title {
