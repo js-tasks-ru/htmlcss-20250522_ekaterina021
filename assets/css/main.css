@@ -1,7 +1,7 @@
 @import './normalize.css';
 @import '../fonts/fonts.css';
-@import '/03-lection1/01-button/button.css';
-@import '/03-lection1/02-accordion/accordion.css';
+@import '../../03-lection1/01-button/button.css';
+@import '../../03-lection1/02-accordion/accordion.css';
 
 :root {
     --white: #ffffff;
@@ -10,7 +10,9 @@
     --purple: #7048E8;
     --purple-hovered: #5028C6;
     --blue: #4263EB;
+    --blue-light: #A0B1F5;
     --blue-hovered: #2342C0;
+    --blue-dark: #334D6E;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
