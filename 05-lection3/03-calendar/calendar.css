@@ -39,6 +39,7 @@
     vertical-align: bottom;
     text-align: center;
     color: var(--blue-dark);
+    padding-bottom: 24px;
 }
 
 .calendar__item_day {
@@ -59,13 +60,13 @@
     line-height: 20px;
     letter-spacing: 0px;
     color: var(--blue-dark);
+}
 
-    &.selected {
-        background-color: var(--blue-light);
-    }
+.calendar__item_selected {
+    background-color: var(--blue-light);
+}
 
-    &.border {
-        background-color: var(--blue);
-        color: var(--white);
-    }
+.calendar__item_border {
+    background-color: var(--blue);
+    color: var(--white);
 }
